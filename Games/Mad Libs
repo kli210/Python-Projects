@@ -1,5 +1,7 @@
 # Mad Libs --> make a list of words to substitute for each blank in a story before reading aloud.
 
+## Shakespeare's Hamlet
+
 verb1 = input("Verb: ")
 adj1 = input("Adjective: ")
 verb2 = input("Verb: ")
