@@ -29,7 +29,7 @@ def guess(x, y):
             continue
 
 
-print("Welcome to this easy-to-play game against a computer\
+print("Welcome to this easy-to-play game against a computer.\
     \nYou set the upper and lower limit,\
     \nthe computer holds a number within those bounds,\
     \nand you have to guess the number.\
@@ -39,4 +39,7 @@ name = input()
 print(f"Okay, {name}! Let's establish the range.")
 lower_limit = int(input("Set your lower limit: "))
 upper_limit = int(input("Set your upper limit: "))
+while lower_limit == upper_limit or lower_limit > upper_limit:
+    print("Please enter an upper limit greater than your lower limit.")
+    upper_limit = int(input("Set your upper limit: "))
 guess(lower_limit, upper_limit)
